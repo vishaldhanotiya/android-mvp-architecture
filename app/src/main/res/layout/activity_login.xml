@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context="com.mvppattern.LoginMVP.LoginActivity">
+
+
+
+    <RelativeLayout
+        android:layout_margin="@dimen/_20sdp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="@dimen/_100sdp"
+            android:layout_height="@dimen/_100sdp"
+            android:background="@drawable/mustache"
+            android:gravity="center"
+            android:layout_centerHorizontal="true"
+            android:textColor="@android:color/black"
+            android:layout_marginTop="@dimen/_35sdp"
+            android:textSize="@dimen/_25sdp"/>
+
+    <EditText
+        android:layout_below="@+id/logo"
+        android:id="@+id/edit_name"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/_15sdp"
+        android:hint="Enter Name"
+        android:gravity="center"
+        android:singleLine="true"
+        android:maxLength="30"/>
+
+    <EditText
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_below="@+id/edit_name"
+        android:id="@+id/edit_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/_15sdp"
+        android:gravity="center"
+        android:password="true"
+        android:singleLine="true"
+        android:hint="Enter Password"
+        android:maxLength="30"/>
+    <Button
+        android:layout_marginTop="@dimen/_10sdp"
+        android:id="@+id/login"
+        android:shadowRadius="10"
+        android:shadowColor="@android:color/background_dark"
+        android:background="@color/skyblue"
+        android:layout_below="@+id/edit_password"
+        android:layout_width="match_parent"
+        android:textColor="@android:color/white"
+        android:layout_height="wrap_content"
+        android:text="Login"/>
+
+        <TextView
+            android:layout_marginTop="@dimen/_10sdp"
+            android:id="@+id/forget_password"
+            android:layout_below="@+id/login"
+            android:gravity="center"
+
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Forget Password ?"/>
+
+
+        <Button
+            android:textColor="@android:color/white"
+            android:id="@+id/sign_up"
+            android:shadowRadius="10"
+            android:layout_alignParentBottom="true"
+            android:shadowColor="@android:color/background_dark"
+           android:layout_marginTop="@dimen/_10sdp"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/skyblue"
+            android:text="SIGN UP NOW"/>
+    </RelativeLayout>
+
+
+
+
+</RelativeLayout>

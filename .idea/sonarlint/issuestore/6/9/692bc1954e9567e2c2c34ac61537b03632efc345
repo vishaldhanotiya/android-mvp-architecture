@@ -1,0 +1,5 @@
+
+Qsquid:S1118":Add a private constructor to hide the implicit public one.(Õ¿ù≈
+bsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(⁄º”©
+nsquid:S1450"WRemove the "retrofit" field and declare it as a local variable in the relevant methods.(ä¢⁄Ω
+wsquid:S00120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(œ´¢–˚ˇˇˇˇ

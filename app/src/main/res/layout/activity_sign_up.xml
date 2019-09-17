@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.mvppattern.SignUpMVP.SignUpActivity">
+
+
+
+
+
+
+            <RelativeLayout
+                android:layout_margin="@dimen/_18sdp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                android:id="@+id/logo"
+                android:layout_width="@dimen/_100sdp"
+                android:layout_height="@dimen/_100sdp"
+                android:background="@drawable/mustache"
+                android:gravity="center"
+                android:layout_centerHorizontal="true"
+                android:textColor="@android:color/black"
+                android:layout_marginTop="@dimen/_35sdp"
+                android:textSize="@dimen/_25sdp"/>
+
+                <EditText
+                    android:layout_below="@+id/logo"
+                    android:id="@+id/edit_firstname"
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/_15sdp"
+                    android:singleLine="true"
+                    android:hint="Enter First Name"
+                    android:gravity="center"
+                    android:maxLength="30"/>
+
+                <EditText
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_below="@+id/edit_firstname"
+                    android:id="@+id/edit_lastname"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/_15sdp"
+                    android:gravity="center"
+
+                    android:singleLine="true"
+                    android:hint="Enter Last Name"
+                    android:maxLength="30"/>
+
+
+                <EditText
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_below="@+id/edit_lastname"
+                    android:id="@+id/edit_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/_15sdp"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:hint="Enter Email Address"
+                    />
+
+                <EditText
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_below="@+id/edit_email"
+                    android:id="@+id/edit_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/_15sdp"
+                    android:gravity="center"
+                    android:password="true"
+                    android:singleLine="true"
+                    android:hint="Enter Password"
+                    android:maxLength="15"/>
+
+                <EditText
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_below="@+id/edit_password"
+                    android:id="@+id/edit_confirm_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/_15sdp"
+                    android:gravity="center"
+                    android:password="true"
+                    android:singleLine="true"
+                    android:hint="Enter Confirm Password"
+                    android:maxLength="15"/>
+
+
+
+                <Button
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:id="@+id/sign_up"
+                    android:layout_below="@+id/edit_confirm_password"
+                    android:shadowRadius="10"
+                    android:textColor="@android:color/white"
+                    android:shadowColor="@android:color/background_dark"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/skyblue"
+                    android:text="Sign Up"/>
+            </RelativeLayout>
+</RelativeLayout>
